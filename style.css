@@ -1,0 +1,194 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tomorrow', 'Ubuntu', sans-serif;
+}
+
+body {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.navbar ul li::after {
+    content:'';
+    height: 3px;
+    width: 0;
+    background:#c5ff01;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+/* CSS properties for "social-media.html"*/
+
+.social-media-page {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('background2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.twitter{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: white;
+    margin: 0;
+}
+
+#twitter1, #twitter2, #twitter3{
+    width: 350px;
+    height: 350px;
+    border-radius: 2%;
+    margin-bottom: 20px;
+} 
+
+h1 {
+    color:#c5ff01;
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+    color:white;
+    text-align: center;
+}
+
+.linkedin{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: white;
+    margin: 0;
+}
+
+#linkedin1, #linkedin2, #linkedin3{
+    width: 350px;
+    height: 350px;
+    border-radius: 5%;
+    margin-bottom: 20px;
+} 
+
+/* CSS properties for "client-marketing.html"*/
+
+.client-marketing-page {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('background3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.co-marketing-activities li {
+    margin-bottom: 20px;
+}
+    
+.co-marketing-title{
+    font-size: 30px;
+}
+
+.co-marketing {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 30px;
+    flex-direction: column;
+    padding: 0px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+co-marketing-fav{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 0px;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+p{
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.co-marketing-ideas {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 0px;
+    flex-direction: column;
+    padding: 0px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.co-marketing-ideas-list li {
+    margin-bottom: 20px;
+}
+/* CSS properties for "graphic-design"*/
+.graphic-design-page {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('background4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.graphic-design-title{
+    font-size: 30px;
+}

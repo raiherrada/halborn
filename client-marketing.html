@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+</head>
+<body class="client-marketing-page">
+    <div class="navbar">
+        <a href="index.html">
+        <img src="halbornlogo.png" class="logo" alt="Home">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="social-media.html">Social Media</a></li>
+            <li><a href="client-marketing.html">Client Marketing</a></li>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="hire-me.html">Hire me!</a></li>
+        </ul>
+    </div>
+   <div>
+            <h1 class="co-marketing-title">Current co-marketing activities Halborn is involved in:</h1>
+    </div>
+        <div class="co-marketing">
+            <div>
+                <ul class="co-marketing-activities">
+                    <li><strong>HAPPY HOURS:</strong> relaxed evenings with Web3 and crypto enthusiasts, hosted by several companies along with Halborn in order to promote opportunities for networking while drinking and having dinner.</li>
+                    <li><strong>INDUSTRY EVENTS AND CONFERENCES:</strong> like the EU ACCESS SUMMIT in which blockchain experts, financial leaders, and technology enthusiasts participate.</li>
+                    <li><strong>JOINT WEBINARS:</strong> mostly shown on Halborn’s Youtube channel, with topics varying from calculating Smart Contract vulnerabilities, DeFi Security, Halborn’s Flash Videos Initiative, among others.</li>
+                    <li><strong>COFFEE MEETUPS:</strong> like the recently hosted along with Sushi, nReach.io, ETH Gas, and Somnia</li>
+                    <li><strong>AUDIT REPORTS AND SECURITY ASSESSMENTS</strong> which are shared on social media once they are completed, promoting the establishment of long-lasting relationships with existing customers.</li>
+                    <li><strong>PARTNERSHIPS AND ALLIANCES:</strong> like the ones already established with companies such as ioBuilders.</li>
+                    <li><strong>JOINT NEWSLETTERS:</strong> featuring interviews with individuals from the industry.</li>
+                </ul>
+            </div>
+            <div class="co-marketing-fav">
+        <div>
+            <h1 class="co-marketing-title">My favorite co-marketing activity is...</h1>
+            <p><strong>HAPPY HOUR IS MY FAV!</strong> Beers, drinks, food, and networking. It happens under a natural and casual setting in which you are making connections and networking that does not look like forced or highly commercial interactions. Great for business and definitely the way to go!</p>
+        </div>
+        <div class="co-marketing-ideas">
+            <div>
+            <h1 class="co-marketing-title">Three new co-marketing ideas for our clients:</h1>
+            </div>
+            <div>
+                <ul class="co-marketing-ideas-list">
+                    <li><strong>CROSS-COMPANY TRAINING PROGRAMS:</strong> joint training sessions or workshops for the employees of Halborn and partner companies. Imagine how cool a Hackerhouse could be if it included cross-company sessions while sharing space and activities throughout a full weekend!</li>
+                    <li><strong>HALBORN TALKS (PODCAST)</strong> although Halborn already has similar approaches as part of its social media strategy (with content like the CI/CD Series and its Flash Videos), an out-of-our-niche podcast could come in handy. This strategy has shown success in the past when implemented by other brands (Nude Project is a great example). Branching out from our niche could boost our brand awareness.</li>
+                    <li><strong>INFLUENCER MARKETING:</strong> what has worked in the past and for other brands will surely continue to work and prove to be a winning strategy. This is the case with influencer marketing. In this context, Halborn's co-marketing strategy would not be aimed precisely at collaborations or partnerships with our clients, but with social media influencers who are (even if vaguely) related to the sector and can add a touch of freshness and joviality to our brand.</li>
+                </ul>
+            </div>
+        <div>
+            <h1 class="co-marketing-title">Top three clients we should engage in co-marketing with:</h1>
+            </div>
+            <div>
+                <ul class="co-marketing-ideas-list">
+                    <li><strong>Polygon</strong></li>
+                    <li><strong>Sushiswap</strong></li>
+                    <li><strong>Phantom</strong></li>
+                </ul>
+            </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Fade in on page load
+            document.body.classList.add("fade-in");
+
+            // Handle link clicks
+            document.querySelectorAll("a").forEach(anchor => {
+                anchor.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const targetUrl = anchor.href;
+                    document.body.classList.add("fade-out");
+
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

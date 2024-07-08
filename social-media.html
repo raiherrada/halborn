@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+</head>
+<body class="social-media-page">
+    <div class="navbar">
+        <a href="index.html">
+        <img src="halbornlogo.png" class="logo" alt="Home">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="social-media.html">Social Media</a></li>
+            <li><a href="client-marketing.html">Client Marketing</a></li>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="hire-me.html">Hire me!</a></li>
+        </ul>
+    </div>
+    <div>
+            <h1>TWITTER... OR X</h1>
+        </div>
+        <div class="twitter">
+            <div>
+                <img id="twitter1" src="/tw1.png"/>
+                <h2 class="twitter1_text">IKIGAI RETREAT 2024</h2>
+            </div>
+            <div>
+                <img id="twitter2" src="/tw2.png"/>
+                <h2 class="twitter1_text">MADRID HACKER HOUSE</h2>
+            </div>
+             <div>
+                <img id="twitter3" src="/tw3.png"/>
+                <h2 class="twitter1_text">ACCESS EU</h2>
+            </div>
+    </div>
+    <div>
+            <h1>LINKEDIN</h1>
+        </div>
+        <div class="linkedin">
+            <div>
+                <img id="linkedin1" src="/linkedin1.png"/>
+                <h2 class="tlinkedin_text">IKIGAI RETREAT 2024</h2>
+            </div>
+            <div>
+                <img id="linkedin2" src="/linkedin2.png"/>
+                <h2 class="linkedin_text">MADRID HACKER HOUSE</h2>
+            </div>
+             <div>
+                <img id="linkedin3" src="/linkedin3.png"/>
+                <h2 class="linkedin_text">ACCESS EU</h2>
+            </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Fade in on page load
+            document.body.classList.add("fade-in");
+
+            // Handle link clicks
+            document.querySelectorAll("a").forEach(anchor => {
+                anchor.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const targetUrl = anchor.href;
+                    document.body.classList.add("fade-out");
+
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
