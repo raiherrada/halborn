@@ -1,63 +1,270 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media</title>
-</head>
-<body class="graphic-design-page">
-    <div class="navbar">
-        <a href="index.html">
-        <img src="halbornlogo.png" class="logo" alt="Home">
-        </a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="social-media.html">Social Media</a></li>
-            <li><a href="client-marketing.html">Client Marketing</a></li>
-            <li><a href="graphic-design.html">Graphic Design</a></li>
-            <li><a href="hire-me.html">Hire me!</a></li>
-        </ul>
-    </div>
-    <div class="video-container">
-            <h1 class="graphic-design-title">AVAILABLE POSITIONS GRAPHIC (VIDEO)</h1>
-            <video class="halborn-video" width="400" height="400" autoplay muted loop playsinline controls>
-            <a href="/halborn.mov">Download video</a>
-            <source src="/halborn.mov" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
-    </div>
-    
-    <div>
-            <h1 class="graphic-design-title">HAPPY HOUR EVENT (DAY & NIGHT) STORIES</h1>
-            <p class="download-text">Click on the images to download them in full size</p>
-    </div>
-    <div class="download-stories">
-        <img src="/day_story.png" class="downloadable-image-day">
-        <img src="/night_story.png" class="downloadable-image-night">
-    </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // Fade in on page load
-            document.body.classList.add("fade-in");
 
-            // Handle link clicks
-            document.querySelectorAll("a").forEach(anchor => {
-                anchor.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    const targetUrl = anchor.href;
-                    document.body.classList.add("fade-out");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tomorrow', 'Ubuntu', sans-serif;
+}
 
-                    setTimeout(() => {
-                        window.location.href = targetUrl;
-                    }, 500);
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+body {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%; /* Cover the whole width */
+    min-height: 100%; /* Cover the whole height */
+    object-fit: cover; /* Ensure the aspect ratio is maintained */
+    z-index: -1; /* Place behind other content */
+}
+
+@media (max-width: 767px) {
+    .background {
+        object-position: center; /* Center the video */
+    }
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.navbar ul li::after {
+    content:'';
+    height: 3px;
+    width: 0;
+    background:#c5ff01;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+/* CSS properties for "social-media.html"*/
+
+.social-media-page {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('background2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.twitter{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    color: white;
+    margin: 0;
+}
+
+#twitter1, #twitter2, #twitter3{
+    width: 350px;
+    height: 350px;
+    border-radius: 1%;
+    margin-bottom: 20px;
+} 
+
+h1 {
+    color:#c5ff01;
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+    color:white;
+    text-align: center;
+}
+
+.linkedin{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    color: white;
+    margin: 0;
+}
+
+#linkedin1, #linkedin2, #linkedin3{
+    width: 350px;
+    height: 350px;
+    border-radius: 1%;
+    margin-bottom: 20px;
+} 
+
+/* CSS properties for "client-marketing.html"*/
+
+.client-marketing-page {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('background3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.co-marketing-activities li {
+    margin-bottom: 20px;
+}
+
+.co-marketing-activities {
+    background: #2B2F3B;
+    padding: 50px;
+    border-radius: 20px;
+}
+.paragraph-happy-hour{
+    background: #2B2F3B;
+    padding: 50px;
+    border-radius: 20px;
+}
+.co-marketing-title{
+    font-size: 30px;
+}
+
+.co-marketing {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 30px;
+    flex-direction: column;
+    padding: 0px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+co-marketing-fav{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 0px;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+p{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.ideas-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: #2B2F3B;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.idea-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#idea1, #idea2, #idea3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.h3-format {
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.co-marketing-ideas-list{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.co-marketing-ideas-list li {
+    margin-bottom: 20px;
+}
+
+/* CSS properties for "graphic-design"*/
+
+.graphic-design-page {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('background4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.graphic-design-title{
+    font-size: 30px;
+}
+
+.download-stories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    gap: 50px;
+}
+
+.downloadable-image-day{
+    width: 50%;
+}
+
+.downloadable-image-night{
+    width: 50%;
+}
+
+.video-container{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+graphic-design-title{
+    margin-bottom: 10px;
+}
