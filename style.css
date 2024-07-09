@@ -285,6 +285,16 @@ a:hover .downloadable-image-day {
     text-align: center;
 }
 
+.video-container{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
 /* CSS properties for "hire-me"*/
 
 .hire-me-page {
