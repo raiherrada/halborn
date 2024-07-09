@@ -294,6 +294,11 @@ a:hover .downloadable-image-day {
     align-items: center;
     margin-bottom: 50px;
 }
+
+.graphic-design-title{
+    margin-bottom: 30px;
+}
+
 /* CSS properties for "hire-me"*/
 
 .hire-me-page {
