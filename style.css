@@ -246,6 +246,45 @@ p{
     font-size: 30px;
 }
 
+.download-stories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+}
+
+.downloadable-image-night {
+            max-width: 60%; /* Ensures the image is responsive */
+            border: 2px solid white; /* Optional styling */
+            margin: 20px; /* Optional spacing */
+            margin-top: 5px;
+            transition: opacity 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+        }
+        
+a:hover .downloadable-image-night {
+            opacity: 0.8; /* Slightly dims the image on hover */
+            border-color: #c5ff01; /* Changes the border color on hover */
+        }
+
+.downloadable-image-day {
+            max-width: 60%; /* Ensures the image is responsive */
+            border: 2px solid white; /* Optional styling */
+            margin: 20px; /* Optional spacing */
+            margin-top: 5px;
+            transition: opacity 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+        }
+        
+a:hover .downloadable-image-day {
+            opacity: 0.8; /* Slightly dims the image on hover */
+            border-color: #c5ff01; /* Changes the border color on hover */
+        }
+        
+.download-text{
+    color:white;
+    text-align: center;
+}
+
 /* CSS properties for "hire-me"*/
 
 .hire-me-page {
