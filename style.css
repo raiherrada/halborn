@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -247,4 +246,96 @@ p{
     font-size: 30px;
 }
 
+/* CSS properties for "hire-me"*/
 
+.hire-me-page {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('background5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content-hire-me {
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;   
+    color: white;
+}
+
+.content-hire-me h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.content-hire-me p {
+    text-align: center;
+}
+
+button{
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+    align-items: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #c5ff01;
+    background: transparent;
+    color:white;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background:#c5ff01;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover {
+    border:none;
+}
+
+#rai{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.resume-section{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resume-section p{
+    color:white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#resume-paragraph{
+    margin: 20px 40px;
+    text-align: justify;
+    color: white;
+    align-items: center;
+}
